@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotnetAspCoreMvcExample", "DotnetAspCoreMvcExample\DotnetAspCoreMvcExample.csproj", "{DFF1F529-8C46-49FA-9032-C591993B5B1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OneginiAuthClient", "OneginiAuthClient\OneginiAuthClient.csproj", "{2E5F07DC-B102-493A-A78B-E9D5E9074EB8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DFF1F529-8C46-49FA-9032-C591993B5B1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFF1F529-8C46-49FA-9032-C591993B5B1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFF1F529-8C46-49FA-9032-C591993B5B1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFF1F529-8C46-49FA-9032-C591993B5B1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E5F07DC-B102-493A-A78B-E9D5E9074EB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E5F07DC-B102-493A-A78B-E9D5E9074EB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E5F07DC-B102-493A-A78B-E9D5E9074EB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E5F07DC-B102-493A-A78B-E9D5E9074EB8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
