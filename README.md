@@ -18,7 +18,7 @@ Run configuration by easily be changed within
 
 ## Onegini Configuration
 You'll need to properly setup your client using the Onegini Admin panel before you can begin testing.
-Refer to the documentation [here](https://docs.onegini.com/msp/5.0/token-server/topics/oidc/index.html). Make sure you 
+Refer to the [OpenID Connect documentation](https://docs.onegini.com/msp/5.0/token-server/topics/oidc/index.html). Make sure you 
 setup the redirect URL properly. (default is `https://localhost:5001/signin-external`) but that is also configurable.    
 
 ## Set up the application configuration
@@ -69,7 +69,7 @@ _appsettings.json_
 ## Run and test
 Run and test the example. You should be able to see a page with login button at the upper right. When you click it
 you're redirected to the OP to login. When successful, you should be redirected back. Now you should see a logout button
-and a username. The username will be whatever is returned as the sub claim (the sub is always returned [read more](http://openid.net/specs/openid-connect-core-1_0.html#StandardClaims)).
+and a username. The username will be whatever is returned as the sub claim (the sub is always returned as past of the [standard claims](http://openid.net/specs/openid-connect-core-1_0.html#StandardClaims)).
 
 # Components in this application
 
