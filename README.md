@@ -1,4 +1,4 @@
-# C# ASP.NET Core example
+# ASP.NET Core example for OpenID Connect
 This example covers how to implement and configure a ASP.NET Core project to work OpenID Connect (OIDC) utlizing 
 Onegini's OpenID Connect Provider (OP).
 
