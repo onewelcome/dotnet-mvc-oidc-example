@@ -1,0 +1,5 @@
+.vscode/
+DotnetAspCoreMvcExample/bin/
+DotnetAspCoreMvcExample/obj/
+OneginiAuthClient/bin/
+OneginiAuthClient/obj/

@@ -43,7 +43,8 @@ _appsettings.Development.json_
       "oidc":{
         "issuer":"http://localhost:7878/oauth/",
         "clientId": "openid-client",
-        "clientSecret": "secret"
+        "clientSecret": "secret",
+        "requireHttpsMetadata": false
       }
     }
     

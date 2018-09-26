@@ -50,6 +50,7 @@ namespace DotnetAspCoreMvcExample
                 o.SaveTokens = true;
                 o.UseTokenLifetime = false;
                 o.GetClaimsFromUserInfoEndpoint = true;
+                o.RequireHttpsMetadata = Boolean.Parse(Configuration["oidc:requireHttpsMetadata"]);
                 //o.Scope.Add("email"); //add additional scopes
                 o.ProtocolValidator.RequireNonce = false;
                 o.TokenValidationParameters = new TokenValidationParameters
