@@ -33,7 +33,6 @@ namespace DotnetAspCoreMvcExample.Controllers
         [Authorize]
         public async Task<IActionResult> Profile()
         {
-            var accessToken = await HttpContext.GetTokenAsync("access_token");
             var idToken = await HttpContext.GetTokenAsync("id_token");
             
             ViewData["idToken"] = idToken;
