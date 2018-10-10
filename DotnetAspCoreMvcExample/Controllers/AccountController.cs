@@ -11,12 +11,12 @@ namespace DotnetAspCoreMvcExample.Controllers
     {
         public IActionResult Login()
         {
-            if (!HttpContext.User.Identity.IsAuthenticated)
+            if (HttpContext.User.Identity.IsAuthenticated)
             {
-                return Challenge(OpenIdConnectDefaults.AuthenticationScheme);
+                return RedirectToAction("Profile", "Account");
             }
-
-            return RedirectToAction("Index", "Home");
+            
+            return Challenge(OpenIdConnectDefaults.AuthenticationScheme);
         }
 
         [HttpGet]
