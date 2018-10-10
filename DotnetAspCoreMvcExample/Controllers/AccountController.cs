@@ -36,8 +36,6 @@ namespace DotnetAspCoreMvcExample.Controllers
             var accessToken = await HttpContext.GetTokenAsync("access_token");
             var idToken = await HttpContext.GetTokenAsync("id_token");
             
-            //Do not use in production, never expose the access token to the view
-            ViewData["accessToken"] = accessToken;
             ViewData["idToken"] = idToken;
             
             return View("Claims");
