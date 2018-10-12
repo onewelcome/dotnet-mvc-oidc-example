@@ -11,12 +11,12 @@ namespace DotnetAspCoreMvcExample.Controllers
     {
         public IActionResult Login()
         {
-            if (!HttpContext.User.Identity.IsAuthenticated)
+            if (HttpContext.User.Identity.IsAuthenticated)
             {
-                return Challenge(OpenIdConnectDefaults.AuthenticationScheme);
+                return RedirectToAction("Profile", "Account");
             }
-
-            return RedirectToAction("Index", "Home");
+            
+            return Challenge(OpenIdConnectDefaults.AuthenticationScheme);
         }
 
         [HttpGet]
@@ -33,11 +33,8 @@ namespace DotnetAspCoreMvcExample.Controllers
         [Authorize]
         public async Task<IActionResult> Profile()
         {
-            var accessToken = await HttpContext.GetTokenAsync("access_token");
             var idToken = await HttpContext.GetTokenAsync("id_token");
             
-            //Do not use in production, never expose the access token to the view
-            ViewData["accessToken"] = accessToken;
             ViewData["idToken"] = idToken;
             
             return View("Claims");

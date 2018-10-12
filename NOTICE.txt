@@ -1,0 +1,12 @@
+ASP.NET Core example for OpenID Connect
+Copyright 2018 Onegini B.V. (https://www.onegini.com)
+
+This product includes software developed by:
+Onegini B.V., Woerden, The Netherlands (https://www.onegini.com/);
+.NET Foundation and Contributors (https://docs.microsoft.com/en-gb/aspnet/core/).
+
+NOTICE: Only our own original work is licensed under the terms of the
+Apache License Version 2.0. The licenses of some libraries might impose
+different redistribution or general licensing terms than those stated in the
+Apache License. Users and redistributors are hereby requested to verify these
+conditions and agree upon them.

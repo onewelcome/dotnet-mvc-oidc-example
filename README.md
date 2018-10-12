@@ -1,4 +1,4 @@
-# ASP.NET Core example for OpenID Connect
+# OpenID Connect Relying Party Example for ASP.NET.
 This example covers how to implement and configure a ASP.NET Core project to work OpenID Connect (OIDC) utlizing 
 Onegini's OpenID Connect Provider (OP).
 
@@ -18,13 +18,18 @@ Run configuration can be changed within
 
 ## Onegini Configuration
 You'll need to properly setup your client using the Onegini Admin panel before you can begin testing.
-Refer to the [OpenID Connect documentation](https://docs.onegini.com/msp/5.0/token-server/topics/oidc/index.html). Make sure you 
-setup the redirect URL properly. The default value is `https://localhost:5001/signin-external`) but that is also configurable.    
+Refer to the [OpenID Connect documentation](https://docs.onegini.com/msp/5.0/token-server/topics/oidc/index.html). 
+
+This project requires a Web client that accepts the `openid` and `profile` scope. Add the scope `email` to see additional claims when the Identity Provider returns this information.
+
+The Onegini Token Server only redirects to preconfigured endpoints after login or logout. You must configure the following endpoints in the Onegini Token Server:
+    * Redirect URL: `https://localhost:5001/signin-external`
+    * Post Logout Redirect URL: `https://localhost:5001/signout-callback-oidc`
 
 ## Set up the application configuration
 We have provided some sample configuration for the project below, it uses the default appsettings.json setup. If you 
 wish to use different configuration, you may need to modify the code inside
-['Startup.cs'](/DotnetAspCoreMvcExample/Startup.cs) accordingly.
+['Startup.cs'](/DotnetAspCoreMvcExample/Startup.cs) accordingly. 
 
 We have provided two application settings json files for you with placeholders, one for development and one for
 production. See [appsettings.Development.json](/DotnetAspCoreMvcExample/appsettings.Development.json) and 
