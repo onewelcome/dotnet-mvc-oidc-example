@@ -10,3 +10,7 @@ for details on configuring this project to bundle and minify static web assets. 
 th[scope=row] {
     font-weight: normal
 }
+
+pre {
+    white-space: pre-wrap;
+}
