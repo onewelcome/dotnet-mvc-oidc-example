@@ -18,7 +18,7 @@ Run configuration can be changed within
 
 ## Onegini Configuration
 You'll need to properly setup your client using the Onegini Admin panel before you can begin testing.
-Refer to the [OpenID Connect documentation](https://docs.onegini.com/msp/6.0/token-server/topics/oidc/index.html). 
+Refer to the [OpenID Connect documentation](https://docs.onegini.com/products/access/topics/oidc/). 
 
 This project requires a Web client that accepts the `openid` and `profile` scope. Add the scope `email` to see additional claims when the Identity Provider returns this information.
 
